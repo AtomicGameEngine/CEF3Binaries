@@ -1,0 +1,2 @@
+
+MacOSX: cef_binary_3.2526.1364.gf6bf57b_macosx64
