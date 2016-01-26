@@ -1,3 +1,5 @@
 
 Windows 64bit: cef_binary_3.2556.1368.g535c4fb_windows64
 MacOSX: cef_binary_3.2526.1364.gf6bf57b_macosx64
+Linux: cef_binary_3.2526.1366.g8617e7c_linux64)
+
