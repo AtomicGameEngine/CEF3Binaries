@@ -1,4 +1,4 @@
-// Copyright (c) 2015 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2016 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 //
@@ -276,7 +276,7 @@ void CefBrowserCToCpp::GetFrameIdentifiers(std::vector<int64>& identifiers) {
 
   // Translate param: identifiers; type: simple_vec_byref
   size_t identifiersSize = identifiers.size();
-  size_t identifiersCount = max(GetFrameCount(), identifiersSize);
+  size_t identifiersCount = std::max(GetFrameCount(), identifiersSize);
   int64* identifiersList = NULL;
   if (identifiersCount > 0) {
     identifiersList = new int64[identifiersCount];
