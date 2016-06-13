@@ -1,4 +1,4 @@
-// Copyright (c) 2015 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2016 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 //
@@ -332,15 +332,11 @@ int CEF_CALLBACK request_handler_get_auth_credentials(
   DCHECK(host);
   if (!host)
     return 0;
-  // Verify param: scheme; type: string_byref_const
-  DCHECK(scheme);
-  if (!scheme)
-    return 0;
   // Verify param: callback; type: refptr_diff
   DCHECK(callback);
   if (!callback)
     return 0;
-  // Unverified params: realm
+  // Unverified params: realm, scheme
 
   // Execute
   bool _retval = CefRequestHandlerCppToC::Get(self)->GetAuthCredentials(

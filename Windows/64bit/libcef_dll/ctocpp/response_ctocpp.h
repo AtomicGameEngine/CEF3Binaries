@@ -1,4 +1,4 @@
-// Copyright (c) 2015 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2016 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 //
@@ -31,6 +31,8 @@ class CefResponseCToCpp
 
   // CefResponse methods.
   bool IsReadOnly() OVERRIDE;
+  cef_errorcode_t GetError() OVERRIDE;
+  void SetError(cef_errorcode_t error) OVERRIDE;
   int GetStatus() OVERRIDE;
   void SetStatus(int status) OVERRIDE;
   CefString GetStatusText() OVERRIDE;

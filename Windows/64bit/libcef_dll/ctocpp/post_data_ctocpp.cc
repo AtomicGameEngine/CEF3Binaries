@@ -1,4 +1,4 @@
-// Copyright (c) 2015 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2016 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 //
@@ -81,7 +81,7 @@ void CefPostDataCToCpp::GetElements(ElementVector& elements) {
 
   // Translate param: elements; type: refptr_vec_same_byref
   size_t elementsSize = elements.size();
-  size_t elementsCount = max(GetElementCount(), elementsSize);
+  size_t elementsCount = std::max(GetElementCount(), elementsSize);
   cef_post_data_element_t** elementsList = NULL;
   if (elementsCount > 0) {
     elementsList = new cef_post_data_element_t*[elementsCount];
