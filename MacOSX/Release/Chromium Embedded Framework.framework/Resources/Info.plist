@@ -15,9 +15,9 @@
 	<key>BreakpadURL</key>
 	<string>none</string>
 	<key>BreakpadVersion</key>
-	<string>51.0.2704.84</string>
+	<string>52.0.2743.75</string>
 	<key>BuildMachineOSBuild</key>
-	<string>14E46</string>
+	<string>15F34</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -29,11 +29,11 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>51.0.2704.84</string>
+	<string>52.0.2743.75</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>2704.84</string>
+	<string>2743.75</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTSDKBuild</key>
@@ -45,6 +45,6 @@
 	<key>DTXcodeBuild</key>
 	<string>7B1005</string>
 	<key>SCMRevision</key>
-	<string>38fd4ea549900bb7a3b958a96b7f2270c3410fdd</string>
+	<string>81ba58c4b3395454bdbabf3106e2efe096a00cc3</string>
 </dict>
 </plist>
